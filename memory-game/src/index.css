@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: monospace;
+  flex-direction: column;
+  text-align: -webkit-center;
+  height: 100%;
+  background-color: black;
+}
+
+.bg-image { 
+  background-image: url("./assets/background.jpg");
+  filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+}
+
+
+header {
+  width: 100vw;
+  border: none;
+  background: rgb(253,29,29);
+  background: linear-gradient(90deg, rgba(253,29,29,1) 45%, rgba(252,176,69,1) 100%);
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgb(248, 248, 248) 0px -3px 0px inset;
+}
+
+header h1 {
+  margin-left: 50px;
+  font-size: 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.counter-container {
+  font-size: large;
+  font-weight: bold;
+}
+
+.card-container {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 100%, 0.504);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 15%;
+  min-width: 100px;
+  max-width: 25%;
+  cursor: pointer;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.card .card-image {
+  max-width: 80%;
+  height: auto;
+}
+
+.instructions {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  border: none;
+  width: 75%;
+  padding: 20px;
+  border: 20px solid hsla(244, 80%, 35%, 0.25);
+}
