@@ -62,8 +62,8 @@ function App() {
       setBestScore(c => c + 1);
     }
   
-    if (clickedIndexes.length === pokemonImages.length) {
-      resetGame();
+    if (currentScore === pokemonImages.length) {
+      setClickedIndexes([]);
     }
   
     const shuffledImages = [...pokemonImages];
@@ -77,7 +77,6 @@ function App() {
 
   return (
     <>
-      <div className="bg-image"></div>
       <Header currentScore={currentScore} bestScore={bestScore} />
       <div className='card-container'>
         {pokemonImages.map((pokemon, index) => (
